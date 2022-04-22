@@ -1,1 +1,3 @@
-DEfault README file with a typo to be fixed!
+Default README file with a typo to be fixed!
+
+Typo fixed
