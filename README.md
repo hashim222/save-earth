@@ -1,5 +1,31 @@
-Default README file with a typo to be fixed!
+# **Our Project Title**
 
-Typo fixed
+## Overview
 
-We've made another change
+View the live project here: 
+
+## User Experience (UX)
+
+### User Stories
+
+## Design
+
+### Design Drawings (Wireframes)
+
+### Fonts
+
+### Colour Scheme
+
+## Features
+
+### Features Left to Implement
+
+## Testing
+
+### Interesting Issues & Bugs Found
+
+## Deployment
+
+## Credits
+
+## Acknowledgements
