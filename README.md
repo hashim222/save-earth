@@ -28,4 +28,6 @@ View the live project here:
 
 ## Credits
 
+- https://solarsystem.nasa.gov/resources/2392/earth-with-clouds-3d-model/
+
 ## Acknowledgements
