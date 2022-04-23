@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
+/*-- Global settings */
 :root {
     --cl-primary: rgb(218, 92, 8);
     --cl-black: rgb(17, 17, 18);
@@ -35,4 +36,51 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/*-- Error pages  -----------------------------------*/
+.error-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-content {
+    /* border: 1px solid; */
+    /* background-color: var(--cl-black); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-content > p {
+    margin: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.error-title {
+    font-size: xx-large;
+    font-style: bold;
+}
+
+.error-link {
+    border: 2px solid;
+    border-radius: 5px;
+    color: var(--cl-primary);
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.error-title,
+.error-link {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.error-link:hover {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
 }
