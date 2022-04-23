@@ -60,4 +60,17 @@ View the live project [HERE](https://hashim222.github.io/save-earth)
 
 *   Interesting Engineering - [Making Mars Habitable: Researchers Propose a Localized Alternative to Terraforming](https://interestingengineering.com/making-mars-habitable-researchers-propose-a-localized-alternative-to-terraforming)
 
+**Earth**
+
+*   National Geographic - [Planet Earth, Explained](https://www.nationalgeographic.com/science/article/earth)
+
+*   NASA Science - [How Big is the Solar System](https://solarsystem.nasa.gov/news/1164/how-big-is-the-solar-system/#:~:text=Scientists%20sometimes%20call%20our%20region,of%20our%20imaginary%20football%20field.)
+
+*   Parade - [What a Wonderful World: Earth Facts](https://parade.com/1331806/stephanieosmanski/facts-about-earth/)
+
+*   National Geographic - [The Sun](https://www.nationalgeographic.org/encyclopedia/sun/)
+
+*   NBC - [What Makes Earth so Special](https://www.nbcnews.com/id/wbna25587911)
+
+
 ## Acknowledgements
