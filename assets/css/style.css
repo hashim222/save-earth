@@ -1,6 +1,6 @@
 /* test to check css linked*/
 body {
-    background-color: lightblue;
+    background-color: rgb(15, 15, 15);
     color: green;
 }
 
@@ -9,6 +9,8 @@ model-viewer {
     width: 100%;
     /* pointer-events: none; */
     background-color: transparent;
+
+    margin-top: 2rem;
 }
 
 .view-button {

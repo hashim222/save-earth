@@ -1,6 +1,6 @@
-//test to check js linked
-console.log("test");
-
+/***
+ * Model Viewer integration for Annotations
+ */
 const modelViewer1 = document.querySelector("#mars-viewer");
 const annotationClicked = (annotation) => {
     let dataset = annotation.dataset;
