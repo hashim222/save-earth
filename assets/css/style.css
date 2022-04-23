@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 :root {
     --cl-primary: rgb(218, 92, 8);
     --cl-black: rgb(17, 17, 18);
+    --ff-roboto: font-family: 'Roboto', sans-serif;
+    --ff-roboto-slab: 'Roboto Slab', serif;
 }
 
 * {
@@ -12,6 +16,17 @@
 body {
     background-color: var(--cl-black);
     color: var(--cl-primary);
+    font-family: var(--ff-roboto-slab);
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-roboto);
 }
 
 section {
