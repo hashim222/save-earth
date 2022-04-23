@@ -38,6 +38,22 @@ section {
     background-size: cover;
 }
 
+/*-- Cards  ----------------------------------------*/
+.card {
+    width: 40%;
+    background-color: var(--cl-black);
+}
+
+.card img {
+    width: 250px;
+    align-self: center;
+}
+
+.card-header {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
+}
+
 /*-- Error pages  -----------------------------------*/
 .error-wrapper {
     display: flex;
