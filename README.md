@@ -5,6 +5,8 @@ hello Im Hash, I just sent PR
 
 View the live project here: 
 
+This project aims to save planet Earth
+
 ## User Experience (UX)
 
 ### User Stories
