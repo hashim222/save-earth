@@ -14,31 +14,29 @@
 
     <h1>Let's Save the Earth</h1>
 
-    <model-viewer
-        id="mars-viewer"
-        class="tap-target"
-        camera-controls
-        camera-orbit
-        camera-target
-        loading="eager"
-        field-of-view="40deg"
-        reveal="auto"
-        shadow-intensity="1"
-        shadow-softness="1"
-        alt="A 3D model of Mars"
-        src="assets/models/mars/mars-model.gltf"
-    >
-        <button
-            class="view-button"
-            slot="hotspot-0"
-            data-position="-0.0569m 0.0969m -0.1398m"
-            data-normal="-0.0569m 0.0969m -0.1398m"
-            data-orbit="-0.0569m 0.0969m -0.1398m"
-            data-target="-0.04384604m 0.07348397m -0.1213202m"
+    <section id="landing">
+        <h1>Hello, World! <span>🌎</span></h1>
+    </section>
+
+    <section id="mars-view">
+        <model-viewer
+            id="mars-viewer"
+            class="tap-target"
+            auto-rotate
+            camera-controls
+            camera-orbit
+            camera-target
+            loading="eager"
+            field-of-view="10deg"
+            reveal="auto"
+            alt="A 3D model of Mars"
+            src="assets/models/mars/mars-model.gltf"
         >
-            Point of Interest
-        </button>
-    </model-viewer>
+        </model-viewer>
+
+    </section>
+
+    <section id="earth-view"></section>
 
     <!-- External Libraries/Frameworks JS scripts -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

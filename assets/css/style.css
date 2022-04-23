@@ -1,9 +1,37 @@
 /* test to check css linked*/
-body {
-    background-color: rgb(15, 15, 15);
-    color: green;
+:root {
+    --cl-primary: rgb(218, 92, 8);
+    --cl-black: rgb(17, 17, 18);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cl-black);
+    color: var(--cl-primary);
+}
+
+section {
+    height: 100vh;
+    background: url('../img/pexels-lucas-pezeta-milky-way.jpg') center/cover fixed;
+}
+
+/* Landing Section */
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Model Viewer Element Styles for 3D models inclusion */
 model-viewer {
     height: 90vh;
     width: 100%;
@@ -29,4 +57,4 @@ model-viewer {
     width: max-content;
     height: max-content;
     transform: translate3d(-50%, -50%, 0);
-  }
+}
