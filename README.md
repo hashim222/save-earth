@@ -1,4 +1,3 @@
-hello Im Hash, I just sent PR
 # **Our Project Title**
  
 ## Overview
