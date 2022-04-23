@@ -72,6 +72,7 @@ section {
     color: var(--cl-primary);
     padding: .5rem;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .error-title,
