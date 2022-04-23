@@ -44,10 +44,10 @@ section {
     background-color: var(--cl-black);
 }
 
-.card img {
+/* .card img {
     width: 250px;
     align-self: center;
-}
+} */
 
 .card-header {
     background-color: var(--cl-primary);
