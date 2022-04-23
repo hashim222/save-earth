@@ -1,5 +1,24 @@
 /* test to check css linked*/
+:root {
+    --cl-primary: rgb(218, 92, 8);
+    --cl-black: rgb(17, 17, 18);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: lightblue;
-    color: green;
+    background-color: var(--cl-black);
+    color: var(--cl-primary);
+}
+
+section {
+    height: 100vh;
+    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
