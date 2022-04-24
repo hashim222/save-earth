@@ -147,6 +147,9 @@ footer a:hover {
 }
 
 /*-- Privacy Policy pages  -----------------------------------*/
+#privacy-page-hero {
+    background-color: #fff;
+}
 #privacy-page-hero > .privacy-page-text-wrapper:first-child h2:first-child{
     font-size: 200%;
 }
