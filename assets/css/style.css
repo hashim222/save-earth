@@ -18,10 +18,10 @@
 }
 
 body {
-    background-color: var(--cl-black);
     color: var(--cl-primary);
     font-family: var(--ff-roboto-slab);
     font-weight: bold;
+    background: url('../img/pexels-lucas-pezeta-milky-way.jpg') center/cover fixed;
 }
 
 h1,
@@ -34,8 +34,7 @@ h6 {
 }
 
 section {
-    height: 100vh;
-    background: url('../img/pexels-lucas-pezeta-milky-way.jpg') center/cover fixed;
+    min-height: 100vh;
 }
 
 /* Landing Section */
@@ -47,6 +46,14 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75),
+        rgba(37, 37, 37, 0.5),
+        rgba(37, 37, 37, 0.25),
+        rgba(255, 255, 255, 0)
+    );
 }
 
 #landing-content {
@@ -70,38 +77,24 @@ section {
     text-align: center;
 }
 
-/* Model Viewer Element Styles for 3D models inclusion */
-model-viewer {
-    /* height: 90vh;
-    width: 100%; */
-    /* pointer-events: none; */
-    background-color: transparent;
-    /* margin-top: 2rem; */
+#landing-alt-desc h2 {
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid red;
+    border-radius: 1rem;
+    background-color: var(--cl-black);
 }
 
-.view-button {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.8);
-    display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    max-width: 128px;
-    overflow-wrap: break-word;
-    padding: 0.5em 1em;
-    position: absolute;
-    width: max-content;
-    height: max-content;
-    transform: translate3d(-50%, -50%, 0);
+/* Model Viewer Element Styles for 3D models inclusion */
+model-viewer {
+    background-color: transparent;
 }
 
 /*-- Cards  ----------------------------------------*/
 .card {
     width: 40%;
     background-color: var(--cl-black);
-    margin: 3em;
+    margin: 3rem;
 }
 
 /* .card img {

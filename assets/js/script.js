@@ -7,13 +7,13 @@ const landingViewer = document.getElementById("landing-viewer");
 if(landingViewer) {
 
     landingViewer.addEventListener("click", () => {
-        if(landingViewer.getAttribute('src') == 'assets/models/earth/earth-model.gltf') {
+        if(landingViewer.getAttribute('src') == 'assets/models/mars/mars-model.gltf') {
             landingViewer.setAttribute(
-                'src', 'assets/models/mars/mars-model.gltf'
+                'src', 'assets/models/earth/earth-model.gltf'
             )
         } else {
             landingViewer.setAttribute(
-                'src', 'assets/models/earth/earth-model.gltf'
+                'src', 'assets/models/mars/mars-model.gltf'
             )
         }
     })
