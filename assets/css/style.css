@@ -73,7 +73,7 @@ section {
 
 /*-- Footer  -----------------------------------*/
 footer {
-    /*position: absolute;*/
+    /*position: absolute; if content small and not pushing to bottom, leave for now*/
     bottom: 0;
     width: 100%;
     left: 0;
