@@ -21,26 +21,32 @@
 
 <body>
     <!-- Intro scene appears before main landing area -->
-    <section id="landing">
-        <h1>Hello, World! <span>🌎</span></h1>
-    </section>
-
-    <!-- Text appearing on main page -->
-    <section id="main-page-text">
-
-        <div class="main-title-text">
-            <h2>Ever since Carl Sagan in 1961 seriously propose the idea, terraforming another planet has long been
-                debated.
-            </h2>
+    <header id="landing">
+        <div id="landing-content">
+            <h1>Hello, World!</h1>
+            <model-viewer
+                id="landing-viewer"
+                class="tap-target"
+                auto-rotate
+                loading="eager"
+                reveal="auto"
+                alt="A 3D model of Mini Planet"
+                src="assets/models/earth/earth-model.gltf"
+            >
+            </model-viewer>
         </div>
+    </header>
 
+    <section id="landing-alt-desc">
+        <h2>Ever since Carl Sagan in 1961 seriously propose the idea, terraforming another planet has long been
+            debated.
+        </h2>
     </section>
-
 
     <!-- Mars View after clicking on hotspots -->
     <section id="mars-view">
         <div class="card atmos-info">
-            <img src="./assets/img/mars/mars-wiki-image-640-427.jpg" class="card-img-top" alt="mars atmosphere">
+            <img src="assets/img/mars/mars-wiki-image-640-427.jpg" class="card-img-top" alt="mars atmosphere">
             <div class="card-header">
                 <h2>Atmospheric Pressure & Tempreature:</h2>
             </div>
@@ -80,7 +86,7 @@
         </div>
 
         <div class="card gravity-info">
-            <img src="./assets/img/mars/mars-wiki-image-640-427-2.jpg" class="card-img-top" alt="mars volcano">
+            <img src="assets/img/mars/mars-wiki-image-640-427-2.jpg" class="card-img-top" alt="mars volcano">
             <div class="card-header">
                 <h2>Low Gravity:</h2>
             </div>
@@ -132,7 +138,7 @@
         </div>
 
         <div class="card  magnet-info">
-            <img src="./assets/img/mars/victoria-alex-antropov86-640-427.jpg" class="card-img-top" alt="Victoria crater">
+            <img src="assets/img/mars/victoria-alex-antropov86-640-427.jpg" class="card-img-top" alt="Victoria crater">
             <div class="card-header">
                 <h2>Magnetic Fields:</h2>
             </div>
@@ -180,7 +186,7 @@
 
         <div class="earth-facts">
             <div class="card old">
-                <img src="./assets/img/earth/pexels-lucas-pezeta-old.jpg" class="card-img-top" alt="Old earth">
+                <img src="assets/img/earth/pexels-lucas-pezeta-old.jpg" class="card-img-top" alt="Old earth">
                 <div class="card-header">
                     <h2>Old ....</h2>
                 </div>
@@ -189,7 +195,7 @@
                 </div>
             </div>
             <div class="card intertwined">
-                <img src="./assets/img/earth/pexels-quang-nguyen-vinh-plates.jpg" class="card-img-top" alt="mountains and water">
+                <img src="assets/img/earth/pexels-quang-nguyen-vinh-plates.jpg" class="card-img-top" alt="mountains and water">
                 <div class="card-header">
                     <h2>Intertwined ....</h2>     
                 </div>
@@ -198,7 +204,7 @@
                 </div>
             </div>
             <div class="card tuned">
-                <img src="./assets/img/earth/pexels-joetography-water.jpg" class="card-img-top" alt="water">
+                <img src="assets/img/earth/pexels-joetography-water.jpg" class="card-img-top" alt="water">
                 <div class="card-header">
                     <h2>Precisely Tuned ....</h2>
                 </div>
@@ -209,7 +215,7 @@
                 </div>
             </div>
             <div class="card sized">
-                <img src="./assets/img/earth/pexels-pixabay-sized.jpg" class="card-img-top" alt="earth viewed from the space">
+                <img src="assets/img/earth/pexels-pixabay-sized.jpg" class="card-img-top" alt="earth viewed from the space">
                 <div class="card-header">
                     <h2>Ideally Sized ....</h2>
                 </div>
@@ -220,7 +226,7 @@
                 </div>
             </div>
             <div class="card protective">
-                <img src="./assets/img/earth/pexels-stein-egil-liland-aurora-borelis.jpg" class="card-img-top" alt="aurora borelis">
+                <img src="assets/img/earth/pexels-stein-egil-liland-aurora-borelis.jpg" class="card-img-top" alt="aurora borelis">
                 <div class="card-header">
                     <h2>Protective ....</h2>
                 </div>
@@ -229,7 +235,7 @@
                 </div>
             </div>
             <div class="card positioned">
-                <img src="./assets/img/earth/pexels-irina-iriser-earth-sun.jpg" class="card-img-top" alt="sun over the field">
+                <img src="assets/img/earth/pexels-irina-iriser-earth-sun.jpg" class="card-img-top" alt="sun over the field">
                 <div class="card-header">
                     <h2>Perfectly Positioned ....</h2>
                 </div>
