@@ -96,9 +96,7 @@ To clone this repository from [GitHub](www.github.com) to a local computer to ma
 
 *   Tam (2022), Gratitude to nature: Presenting a theory of its conceptualization, measurement, and effects on pro-environmental behavior. [ScienceDirect]( https://www.sciencedirect.com/science/article/pii/S0272494421002073)
 
-### Media
-   * The favicon Image for this website was taken from [PngWing Website](https://www.pngwing.com/)
-
+*   To create the privacy policy for the site, we used the [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
 ### Content Research
 **Mars**
 *   Natural History Museum - [It's Offical: we can't terraform Mars](https://www.nhm.ac.uk/discover/news/2018/july/its-official-we-cant-terraform-mars.html)
@@ -128,6 +126,9 @@ To clone this repository from [GitHub](www.github.com) to a local computer to ma
 *   National Geographic - [The Sun](https://www.nationalgeographic.org/encyclopedia/sun/)
 
 *   NBC - [What Makes Earth so Special](https://www.nbcnews.com/id/wbna25587911)
+
+### Media
+   * The favicon Image for this website was taken from [PngWing Website](https://www.pngwing.com/)
 
 
 ## Acknowledgements
