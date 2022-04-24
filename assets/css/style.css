@@ -72,7 +72,7 @@ section {
 
 /*-- Footer  -----------------------------------*/
 footer {
-    /*position: absolute; if content small and not pushing to bottom, leave for now*/
+    position: absolute;
     bottom: 0;
     width: 100%;
     left: 0;
@@ -82,6 +82,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     align-items: center;
+    font-size: 2vw;
 }
 
 #copyright {
@@ -92,12 +93,75 @@ footer {
 footer a {
     text-decoration: none;
     color: #fff;
+    padding: 5px;
 }
 
 footer a:hover {
     letter-spacing: 2px;
     color: #da5c08;
-  }
+}
+
+/*-- Nav Bar  -----------------------------------*/
+
+/* Styling for the Whole Header Section */
+header {
+    /* Using flexbox for responsive design */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #424952;
+    width: 100%;
+    /* Fixed header to always display on top of page*/
+    position: fixed;
+    /* Using z-index to ensure header is in front 
+    of the other sections as they scroll passed */
+    z-index: 99;
+    flex-direction: column;
+    padding: 5px 0 5px;
+}
+
+/* The logos link styled */
+.logo a {
+    text-decoration: none;
+    /* Use a transition here for smooth movement on hover */
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    letter-spacing: 2px;
+}
+
+/* The Logo in header styled */
+.logo h2 {
+    color: #fff;
+}
+
+/* The navigation bar section styled */
+.nav-bar {
+    font-size: 10%;
+}
+
+/* The list elements in the navigation bar styled */
+.nav-bar li {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 2vw;
+    margin: 0 5px;
+}
+
+/* The links for the navigation bar items */
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* Use a transition here for smooth movement */
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+}
 
 /*-- Error pages  -----------------------------------*/
 .error-wrapper {
@@ -151,27 +215,44 @@ footer a:hover {
 #privacy-page-hero {
     background-color: #fff;
 }
-#privacy-page-hero > .privacy-page-text-wrapper:first-child h2:first-child{
+
+#privacy-page-hero>.privacy-page-text-wrapper:first-child h2:first-child {
     font-size: 200%;
 }
-.privacy-page-text-wrapper{
+
+.privacy-page-text-wrapper {
     padding: 15px 50px 10px 50px;
 }
-.privacy-page-text-wrapper a{
+
+.privacy-page-text-wrapper a {
     text-decoration: none;
     color: var(--cl-white);
     font-style: italic;
 }
-.privacy-page-text-wrapper a:hover{
+
+.privacy-page-text-wrapper a:hover {
     border-bottom: 3px solid var(--cl-black);
     transition-delay: 100ms;
 }
 
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
-@media (min-width: 700px){
+@media (min-width: 700px) {
     footer {
         grid-template-columns: repeat(5, 1fr);
         height: 60px;
+        font-size: 1vw;
+    }
+
+    /* Using flexbox column for responsiveness 
+        and less padding for smaller screens on heading */
+    header {
+        flex-direction: row;
+        padding: 10px 30px;
+    }
+
+    .nav-bar li {
+        margin: 0 10px;
+        font-size: 1.5vw;
     }
 }
