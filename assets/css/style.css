@@ -1,7 +1,18 @@
-/* test to check css linked*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/*-- Global settings */
 :root {
     --cl-primary: rgb(218, 92, 8);
+    --cl-secondary: rgb(40,163,204);
+
+
+    /* --cl-primary: rgb(189, 67, 54);
+    --cl-secondary: rgb(44, 177, 81); */
+
     --cl-black: rgb(17, 17, 18);
+    --cl-white: rgb(251, 245, 245);
+    --ff-roboto: font-family: 'Roboto', sans-serif;
+    --ff-roboto-slab: 'Roboto Slab', serif;
 }
 
 * {
@@ -13,6 +24,17 @@
 body {
     background-color: var(--cl-black);
     color: var(--cl-primary);
+    font-family: var(--ff-roboto-slab);
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-roboto);
 }
 
 section {
@@ -28,7 +50,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 /* Model Viewer Element Styles for 3D models inclusion */
@@ -57,4 +78,79 @@ model-viewer {
     width: max-content;
     height: max-content;
     transform: translate3d(-50%, -50%, 0);
+}
+
+/*-- Cards  ----------------------------------------*/
+.card {
+    width: 40%;
+    background-color: var(--cl-black);
+    margin: 3em;
+}
+
+/* .card img {
+    width: 250px;
+    align-self: center;
+} */
+
+.card-header {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
+}
+
+/*-- Earth cards  ----------------------------------------*/
+#earth-view {
+    color: var(--cl-secondary);
+}
+
+#earth-view .card-header {
+    background-color: var(--cl-secondary);
+}
+
+
+/*-- Error pages  -----------------------------------*/
+.error-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-content {
+    /* border: 1px solid; */
+    /* background-color: var(--cl-black); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-content > p {
+    margin: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.error-title {
+    font-size: xx-large;
+    font-style: bold;
+}
+
+.error-link {
+    border: 2px solid;
+    border-radius: 5px;
+    color: var(--cl-primary);
+    padding: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.error-title,
+.error-link {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.error-link:hover {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
 }
