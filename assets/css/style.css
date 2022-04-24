@@ -127,3 +127,12 @@ section {
 .privacy-page-text-wrapper{
     padding: 15px 50px 10px 50px;
 }
+.privacy-page-text-wrapper a{
+    text-decoration: none;
+    color: var(--cl-white);
+    font-style: italic;
+}
+.privacy-page-text-wrapper a:hover{
+    border-bottom: 3px solid var(--cl-black);
+    transition-delay: 100ms;
+}
