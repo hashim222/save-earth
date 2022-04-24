@@ -211,6 +211,74 @@ header {
     color: var(--cl-black);
 }
 
+/*-- About Us Page  -----------------------------------*/
+/* The main container for the landing about us page under the nav bar */
+.banner {
+    /* fixed to main content moves over as scrolled */
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: fixed;
+    right: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* The background video of the landing home page */
+video {
+    position: fixed;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* Give some opacitiy so not too dominating when text laid on top */
+    opacity: 0.7;
+    /* Use z-index so video sits behind the main title text on top */
+    z-index: -1;
+}
+
+/* The text that sits on top of the background video of the landing home page */
+.banner-text {
+    margin: 30px 0 50px 150px;
+    /* Use flexbox for responsiveness */
+    flex-direction: column;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    margin: 30px 0 50px 50px;
+    line-height: 1.5em;
+    font-style: italic;
+    text-align: start;
+    color: #fff;
+    /* Use shadow around text as it will be white and this helps 
+  it stand out for reading accessibility against the video background */
+    text-shadow: 0 0 20px #262626;
+}
+
+/* Explore Button on Landing home page styled */
+#explore-link {
+    text-align: end;
+    width: 80%;
+    margin-top: 10px;
+}
+
+#explore-link a {
+    color: #fff;
+    background-color: #424952;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2.5em;
+    text-decoration: none;
+}
+
+#explore-link a:hover {
+    letter-spacing: 2px;
+    color: #424952;
+    background-color: #fff;
+}
+
 /*-- Privacy Policy pages  -----------------------------------*/
 #privacy-page-hero {
     background-color: #fff;
@@ -254,5 +322,13 @@ header {
     .nav-bar li {
         margin: 0 10px;
         font-size: 1.5vw;
+    }
+
+    .banner-text h1 {
+        font-size: 4.5em;
+    }
+
+    #explore-link a {
+        font-size: 1.5em;
     }
 }
