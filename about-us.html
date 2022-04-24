@@ -46,30 +46,48 @@
             <h1>About Us</h1>
             <!-- Explore button on landing page linked to first section -->
             <div id="explore-link">
-                <a href="#about" aria-label="Go to the about us section">Meet the Team</a>
+                <a href="#team-info" aria-label="Go to the about us section">Meet the Team</a>
             </div>
         </div>
     </div>
 
+    <!-- The main content area that scrolls up over the landing section -->
+    <div class="content-area">
+        <!-- Team Info Section -->
+        <div id="team-info">
+            <!-- Empty div to land the link from the nav bar to Team Info Section 
+                so not blocked by fixed header -->
+            <div class="about-anchor" id="about-landing"></div>
+            <div class="main-content-container">
+                <div class="container-text" id="about-text">
+                    <h2>Team Name</h2><br>
+                    <p>We are a group of 6 Code Institue students, past & present that came together to save earth over the course of 1 Hackathon!</p>
+                    <br>
+                    <p>Our Mission: Change behaviours through Terraforming</p><br>
+                    <p>It was tough, fun, mad, a tonne of crazy terraforming facts & hard work...... we hope we succeeded?</p>
+                    <p>Keep scrolling to learn how to get in touch with us or view our other work.</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- footer -->
+        <footer>
+            <!-- Links connects to the different html page sections -->
+            <a href="index.html" aria-label="Go to Home Page">Home</a>
+            <a href="about-us.html" aria-label="Go to About Us Page">About Us</a>
+            <a href="privacy-policy.html" aria-label="Go to Privacy Policy Page">Privacy Policy</a>
+            <a href="accessibility-policy.html" aria-label="Go to Privacy Policy Page">Accessibility</a>
+            <p id="copyright">&copy; Team Name 2022</p>
+        </footer>
 
-    <!-- footer -->
-    <footer>
-        <!-- Links connects to the different html page sections -->
-        <a href="index.html" aria-label="Go to Home Page">Home</a>
-        <a href="about-us.html" aria-label="Go to About Us Page">About Us</a>
-        <a href="privacy-policy.html" aria-label="Go to Privacy Policy Page">Privacy Policy</a>
-        <a href="accessibility-policy.html" aria-label="Go to Privacy Policy Page">Accessibility</a>
-        <p id="copyright">&copy; Team Name 2022</p>
-    </footer>
+        <!-- Bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 
-    <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Link to Javascript -->
-    <script src="assets/js/script.js"></script>
+        <!-- Link to Javascript -->
+        <script src="assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>

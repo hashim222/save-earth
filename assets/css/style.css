@@ -279,6 +279,58 @@ video {
     background-color: #fff;
 }
 
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 1000px;
+    background: #ddd;
+    padding-top: 20px;
+}
+
+/* This is the main content area that will move 
+  over the landing page and behind the header */
+.main-content-container {
+    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 40px 40px 40px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* This is the containers that hold the text*/
+.container-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #424952;
+    border-radius: 20px;
+    width: 75%;
+    padding: 20px;
+    color: #fff;
+    /* Using high z-index to ensure the text boxes 
+    are in front of the images when overlapped on large screens */
+    z-index: 20;
+    margin-left: 50px;
+}
+
+.container-text h2 {
+    text-shadow: 0 0 4px #262626;
+}
+
+.container-text p {
+    text-align: justify;
+}
+
+/* The empty div that anchors the link when chosen from explore button. */
+.about-anchor {
+    margin-top: -65px;
+    height: 65px;
+}
+
 /*-- Privacy Policy pages  -----------------------------------*/
 #privacy-page-hero {
     background-color: #fff;
