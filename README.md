@@ -1,13 +1,29 @@
-# **Our Project Title**
-
-This project aims to save planet Earth
+# **Hello, World!**
 
 View the live project [HERE](https://hashim222.github.io/save-earth)
-<br />
-<br />
-<!-- Responsive design sample image from http://ami.responsivedesign.is/ -->
+
 
 ## Overview
+Hello, World! is a website for the Code Institute Hackathon to celebrate Earth Day 2022.
+
+
+The aim of this website Hello, World! is to create awareness of the value of planet Earth and to help bring awareness appreciation in the hope of changing attitudes and behaviours towards our planet.  To allow the user to rethink how we treat and interact and respect our planet. 
+
+
+To do the above this website presents the user with the idea of terraforming Mars.  This should grab the user’s attention as it should be unexpected for a website with the theme of Earth Day.  The user is given a 3D globe of Mars to interact with.  As the user clicks, they start to learn how inhospitable a planet like Mars is and the almost impossible effort that goes into trying to terraform and create a planet like Earth.
+
+
+The user is then presented with a 3D globe of Earth to interact with.  This website aims to show the user how perfectly formed the Earth is to support and sustain life and is reminded at the end that the Earth is our home.
+
+
+There is an abundance of information on how what people can do to care for the Earth and tackle the issues of climate change.  This website tries not to bombard the user with behaviours they must do to care for the Earth and instead attempts to subtly show the user the uniqueness of the planet in order for the user to gain a newfound appreciation and gratitude.  Through this understanding and appreciation, the user is then directed to look inward at their own behaviours and actions.  
+
+
+According to a study by [Tam (2022)]( https://www.sciencedirect.com/science/article/pii/S0272494421002073), trait gratitude to nature was associated with not only the intention to perform pro-environmental behaviour but also actual donation to environmental causes.
+
+
+With this research in mind, this website aims to establish gratitude within the user for the Earth in the hopes it leads to environmental behavioural change.
+
 
 ## User Experience (UX)
 
@@ -78,7 +94,7 @@ To clone this repository from [GitHub](www.github.com) to a local computer to ma
 
 ## Credits
 
-### Contents 
+*   Tam (2022), Gratitude to nature: Presenting a theory of its conceptualization, measurement, and effects on pro-environmental behavior. [ScienceDirect]( https://www.sciencedirect.com/science/article/pii/S0272494421002073)
 
 ### Media
    * The favicon Image for this website was taken from [PngWing Website](https://www.pngwing.com/)
