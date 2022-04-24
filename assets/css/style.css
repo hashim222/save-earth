@@ -240,7 +240,7 @@ video {
 
 /* The text that sits on top of the background video of the landing home page */
 .banner-text {
-    margin: 30px 0 50px 150px;
+    margin: 30px 50px;
     /* Use flexbox for responsiveness */
     flex-direction: column;
 }
@@ -322,6 +322,10 @@ video {
     .nav-bar li {
         margin: 0 10px;
         font-size: 1.5vw;
+    }
+
+    .banner text {
+        margin: 30px 0 50px 150px;
     }
 
     .banner-text h1 {
