@@ -3,7 +3,14 @@
 /*-- Global settings */
 :root {
     --cl-primary: rgb(218, 92, 8);
+    --cl-secondary: rgb(40,163,204);
+
+
+    /* --cl-primary: rgb(189, 67, 54);
+    --cl-secondary: rgb(44, 177, 81); */
+
     --cl-black: rgb(17, 17, 18);
+    --cl-white: rgb(251, 245, 245);
     --ff-roboto: font-family: 'Roboto', sans-serif;
     --ff-roboto-slab: 'Roboto Slab', serif;
 }
@@ -31,7 +38,8 @@ h6 {
 }
 
 section {
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +50,7 @@ section {
 .card {
     width: 40%;
     background-color: var(--cl-black);
+    margin: 3em;
 }
 
 /* .card img {
@@ -53,6 +62,16 @@ section {
     background-color: var(--cl-primary);
     color: var(--cl-black);
 }
+
+/*-- Earth cards  ----------------------------------------*/
+#earth-view {
+    color: var(--cl-secondary);
+}
+
+#earth-view .card-header {
+    background-color: var(--cl-secondary);
+}
+
 
 /*-- Error pages  -----------------------------------*/
 .error-wrapper {
