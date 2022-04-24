@@ -35,6 +35,39 @@ View the live project [HERE](https://hashim222.github.io/save-earth)
 
 ## Deployment
 
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+* In the GitHub repository, navigate to the Settings tab.
+
+* On the left hand side menu, choose Pages.
+
+* From the source section drop-down menu, select the Main branch and then press Save.
+
+* The next page will displlay a notice stating the site is ready to be published. 
+
+* Refresh GitHub and the display will now state the site is published.
+
+
+* Visual Studio (VS) Code & GitPod were the Integrated Development Environments used bby the team to develop this website.
+
+### Version Control
+**Info here for setting up branch protection / colaborators & commands used**
+
+### Cloning
+To clone this repository from [GitHub](www.github.com) to a local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits or contribute use the following steps:
+
+1. On [GitHub](www.github.com), navigate to the main page of the repository.
+
+2. Above the list of files, click Code.
+
+3. click Use GitHub CLI, then the copy icon.
+
+4. Open Git Bash and change the current working directory to the location where you want the cloned directory.
+
+5. Type git clone, and then paste the URL that was copied from step 3 above.
+
+6. Press Enter to create the local clone.
+
 ## Credits
 
 ### Contents 
