@@ -5,25 +5,16 @@ const landing = document.getElementById("landing");
 const landingViewer = document.getElementById("landing-viewer");
 
 if(landingViewer) {
-    
-    let modelSrc = landingViewer.getAttribute(landingViewer.getAttribute('src'));
 
     landingViewer.addEventListener("click", () => {
-        switch (modelSrc) {
-            case 'assets/models/earth/earth-model.gltf':
-                landingViewer.setAttribute(
-                    'src', 'assets/models/mars/mars-model.gltf'
-                );
-                break;
-            case 'assets/models/mars/mars-model.gltf':
-                landingViewer.setAttribute(
-                    'src', 'assets/models/earth/earth-model.gltf'
-                );
-                break;
-            default:
-                landingViewer.setAttribute(
-                    'src', 'assets/models/mars/mars-model.gltf'
-                );
+        if(landingViewer.getAttribute('src') == 'assets/models/earth/earth-model.gltf') {
+            landingViewer.setAttribute(
+                'src', 'assets/models/mars/mars-model.gltf'
+            )
+        } else {
+            landingViewer.setAttribute(
+                'src', 'assets/models/earth/earth-model.gltf'
+            )
         }
     })
 }
