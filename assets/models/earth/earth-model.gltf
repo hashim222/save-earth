@@ -63,11 +63,11 @@
   "images": [
     {
       "name": "earth_norm.jpg",
-      "uri": "EarthClouds_1_12756_img0.png"
+      "uri": "earth-model_img0.png"
     },
     {
-      "name": "earthClouds_diff.jpg",
-      "uri": "EarthClouds_1_12756_img1.png"
+      "name": "earth_diff.jpg",
+      "uri": "earth-model_img1.png"
     }
   ],
   "accessors": [
@@ -138,7 +138,7 @@
   ],
   "buffers": [
     {
-      "uri": "EarthClouds_1_12756_data.bin",
+      "uri": "earth-model_data.bin",
       "byteLength": 75328
     }
   ]
