@@ -147,6 +147,14 @@ footer a:hover {
     color: var(--cl-black);
 }
 
+/*-- Privacy Policy pages  -----------------------------------*/
+#privacy-page-hero > .privacy-page-text-wrapper:first-child h2:first-child{
+    font-size: 200%;
+}
+.privacy-page-text-wrapper{
+    padding: 15px 50px 10px 50px;
+}
+
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
 @media (min-width: 700px){
