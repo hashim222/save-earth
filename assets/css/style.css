@@ -76,7 +76,7 @@ model-viewer {
 }
 
 #landing-content h1 {
-    font-size: 8rem;
+    /* font-size: 8rem; */
     text-align: center;
 }
 
@@ -90,6 +90,8 @@ model-viewer {
 #landing-alt-desc h2 {
     margin: 0 1rem;
     padding: 1rem;
+    font-size: 2.5rem;
+    font-style: italic;
     border: 1px solid red;
     border-radius: 1rem;
     background-color: var(--cl-black);
@@ -132,39 +134,33 @@ model-viewer {
 }
 
 #or-content {
-    margin-top: 15rem;
+    margin-top: 14rem;
     display: flex;
     flex-direction: column;
 }
 
 #or-content h2 {
-    font-size: 3rem;
-    padding-left: 5rem;
+    font-size: 1.8rem;
+    padding-left: 2rem;
 }
 
-#or-content p {
-    font-size: 1.5rem;
-    padding-left: 6.5rem;
+#or-content-p {
+    font-size: 1.4rem;
+    padding-left: 2rem;
 }
 
 #rocket-img {
     position: absolute;
-    transform: rotateZ(75deg);
-    top: 35%;
+    transform: rotateZ(75deg) scale(.25);
+    top: -5%;
     left: 25%;
 }
 
 /*-- Cards  ----------------------------------------*/
 .card {
-    /* width: 40%; */
     background-color: var(--cl-black);
     margin: 3rem auto;
 }
-
-/* .card img {
-    width: 250px;
-    align-self: center;
-} */
 
 .card-header {
     background-color: var(--cl-primary);
@@ -190,6 +186,7 @@ footer {
     justify-items: center;
     align-items: center;
     font-size: 2vw;
+    margin-top: 2rem;
 }
 
 #copyright {
@@ -455,7 +452,29 @@ video {
 }
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
+@media (min-width: 594px) {
+    
+    #or-content h2 {
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+    
+    #or-content-p {
+        font-size: 1.5rem;
+        padding-left: 5.5rem;
+    }
+    
+    #rocket-img {
+        transform: rotateZ(75deg) scale(.5);
+    }
+}
+
 @media (min-width: 700px) {
+
+    #landing-content h1 {
+        font-size: 8rem;
+    }
+
     footer {
         grid-template-columns: repeat(5, 1fr);
         height: 60px;
@@ -484,5 +503,39 @@ video {
 
     #explore-link a {
         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 991px) {
+
+    #or-we-could {
+        max-height: 85vh;
+    }
+
+    #or-content {
+        margin-top: 16rem;
+    }
+
+    #or-content h2 {
+        font-size: 5rem;
+        padding-left: 4.5rem;
+    }
+    
+    #or-content-p {
+        font-size: 2rem;
+        padding-left: 8rem;
+        padding-top: 2rem;
+    }
+    
+    #rocket-img {
+        left: 55%;
+        top: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #or-content-p {
+        font-size: 2rem;
+        padding-left: 15rem;
     }
 }
