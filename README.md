@@ -2,6 +2,9 @@
 
 View the live project [HERE](https://hashim222.github.io/save-earth)
 
+<!-- Responsive desgin sample image from http://ami.responsivedesign.is/ -->
+<h2 align="center"><img src="docs/hello-world-mockup.png"></h2>
+
 ## Overview
 Hello, World! is a website for the Code Institute Hackathon to celebrate Earth Day 2022.
 
