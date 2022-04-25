@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 versions
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
-/*-- Global settings */
+/* Global settings */
+
 :root {
     --cl-primary: rgb(218, 92, 8);
     --cl-secondary: rgb(40, 163, 204);
@@ -33,7 +41,8 @@
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -59,9 +68,101 @@ section {
     min-height: 100vh;
 }
 
-/* Model Viewer Element Styles for 3D models inclusion */
+    /* Model Viewer Element Styles for 3D models inclusion */
 model-viewer {
     background-color: transparent;
+}
+
+model-viewer {
+    --poster-color: transparent;
+}
+
+    /* Cards */
+.card {
+    background-color: var(--cl-black);
+    margin: 3rem auto;
+}
+
+.card-header {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
+}
+
+/* Nav Bar */
+
+    /* Styling for the Whole Header Section */
+#about-us-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #424952;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 1.2rem 0;
+}
+
+.nav-bar > ul {
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    letter-spacing: 2px;
+}
+
+.logo h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-bar {
+    font-size: 10%;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 0 5px;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
 }
 
 /* Landing Section */
@@ -69,18 +170,36 @@ model-viewer {
 #landing {
     height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: var(--vertical-gradient-short);
 }
 
 #landing-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 5rem;
     width: 100%;
 }
@@ -90,16 +209,21 @@ model-viewer {
 }
 
 #landing-content p {
-    font-size: 1.2rem;
     background: var(--cl-black);
     padding: 1rem;
     border-radius: 0.75rem;
 }
 
 #landing-alt-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -121,27 +245,40 @@ model-viewer {
     overflow-y: scroll;
 }
 
-#mars-viewer,
-#earth-viewer {
-    width: 100%;
+#mars-viewer, #earth-viewer {
+    width: 70%;
     height: 100vh;
     margin: 3rem auto;
 }
 
-/* Or we could */
+#earth-view {
+    color: var(--cl-secondary);
+}
+
+#earth-view .card-header {
+    background-color: var(--cl-secondary);
+}
+
+/* Or we could section */
 
 #or-we-could {
     background: var(--vertical-gradient-long);
     max-height: 50vh;
     width: 100%;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     position: relative;
 }
 
 #or-content {
     margin-top: 14rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #or-content h2 {
@@ -156,53 +293,229 @@ model-viewer {
 
 #rocket-img {
     position: absolute;
-    transform: rotateZ(75deg) scale(.25);
+    -webkit-transform: rotateZ(75deg) scale(.25);
+        -ms-transform: rotate(75deg) scale(.25);
+            transform: rotateZ(75deg) scale(.25);
     top: -5%;
     left: 25%;
 }
 
-/*-- Cards  ----------------------------------------*/
-.card {
-    background-color: var(--cl-black);
-    margin: 3rem auto;
+/* About Us Page */
+    /* The main container for the landing about us page under the nav bar */
+body#about-us {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
-.card-header {
-    background-color: var(--cl-primary);
-    color: var(--cl-black);
+.banner {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: fixed;
+    right: 0;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-/*-- Earth cards  ----------------------------------------*/
-#earth-view {
-    color: var(--cl-secondary);
+    /* The background video of the landing home page */
+video {
+    position: fixed;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+        object-fit: fill;
+    opacity: 0.7;
+    z-index: -1;
 }
 
-#earth-view .card-header {
-    background-color: var(--cl-secondary);
+.banner-text {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 30px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
-/*-- Footer  -----------------------------------*/
+.banner-text h1 {
+    font-size: 3em;
+    margin: 200px 0 50px 50px;
+    line-height: 1.5em;
+    font-style: italic;
+    text-align: start;
+    color: #fff;
+    text-shadow: 0 0 20px #262626;
+}
+
+#explore-link {
+    text-align: end;
+    width: 80%;
+    margin-top: 10px;
+}
+
+#explore-link a {
+    color: #fff;
+    background-color: #424952;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2.5em;
+    text-decoration: none;
+}
+
+#explore-link a:hover {
+    letter-spacing: 2px;
+    color: #424952;
+    background-color: #fff;
+}
+
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 1000px;
+    background: #bdd7ee;
+    padding-top: 20px;
+}
+
+/* This is the main content area that will move 
+    over the landing page and behind the header */
+.main-content-container {
+    background: url('../img/pexels-lucas-pezeta-milky-way.jpg') center/cover no-repeat;
+    margin: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.container-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 2.2rem;
+    color: var(--cl-white);
+    z-index: 20;
+}
+
+.container-text h2 {
+    text-shadow: 0 0 4px #262626;
+}
+
+.container-text p {
+    font-size: 1rem;
+}
+
+    /* The empty div that anchors the link when chosen from explore button. */
+.about-anchor {
+    margin-top: -65px;
+    height: 65px;
+}
+
+.about-us-footer a:hover {
+    color: #bdd7ee;
+}
+
+#team-info-details {
+    text-align: center;
+    margin-top: 2rem;
+    display: grid;
+    gap: 3rem;
+}
+
+#team-info-details p {
+    text-align: center;
+}
+
+#team-info-details a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+#team-info-details a:hover {
+    letter-spacing: 2px;
+    color: #bdd7ee;
+}
+
+/* Privacy Policy pages */
+
+#policy-page-container {
+    padding-top: 12rem;
+}
+
+.policy-card > * {
+    margin-top: 1rem;
+}
+
+.policy-card {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.policy-card ul {
+    margin-left: 25px;
+}
+
+.policy-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Footer */
+
 footer {
     width: 100%;
     background-color: #000;
     color: #fff;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-    align-items: center;
-    font-size: 2vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
     margin-top: 2rem;
 }
 
 #copyright {
-    margin-bottom: 0;
+    margin: 1rem 0;
     font-style: italic;
 }
 
 footer a {
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    margin: 1rem 0;
 }
 
 footer a:hover {
@@ -210,89 +523,38 @@ footer a:hover {
     color: #da5c08;
 }
 
-/*-- Nav Bar  -----------------------------------*/
+/* Error pages */
 
-/* Styling for the Whole Header Section */
-#about-us-header {
-    /* Using flexbox for responsive design */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #424952;
-    width: 100%;
-    /* Fixed header to always display on top of page*/
-    position: fixed;
-    /* Using z-index to ensure header is in front 
-    of the other sections as they scroll past */
-    z-index: 99;
-    flex-direction: column;
-    padding: 1.2rem 0;
-}
-
-.nav-bar>ul {
-    margin: 0;
-}
-
-/* The logos link styled */
-.logo a {
-    text-decoration: none;
-    /* Use a transition here for smooth movement on hover */
-    transition: 0.3s;
-}
-
-.logo a:hover {
-    letter-spacing: 2px;
-}
-
-/* The Logo in header styled */
-.logo h2 {
-    color: #fff;
-    margin: 0;
-}
-
-/* The navigation bar section styled */
-.nav-bar {
-    font-size: 10%;
-}
-
-/* The list elements in the navigation bar styled */
-.nav-bar li {
-    display: inline-flex;
-    list-style-type: none;
-    font-size: 2vw;
-    margin: 0 5px;
-}
-
-/* The links for the navigation bar items */
-.nav-bar a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    /* Use a transition here for smooth movement */
-    transition: 0.3s;
-}
-
-.nav-bar a:hover {
-    letter-spacing: 2px;
-    border-bottom: 1px solid #fff;
-}
-
-/*-- Error pages  -----------------------------------*/
 .error-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
 }
 
 .error-content {
     border: 1px solid;
     background-color: var(--cl-error-bg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .error-content>p {
@@ -326,181 +588,15 @@ footer a:hover {
     color: var(--cl-black);
 }
 
-/*-- About Us Page --*/
-/* The main container for the landing about us page under the nav bar */
+/* Media Queries */
 
-body#about-us {
-    background: none;
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 420px) {
+    .nav-bar ul {
+        flex-direction: row;
+    }
 }
 
-.banner {
-    /* fixed to main content moves over as scrolled */
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    position: fixed;
-    right: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-/* The background video of the landing home page */
-video {
-    position: fixed;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    /* Give some opacitiy so not too dominating when text laid on top */
-    opacity: 0.7;
-    /* Use z-index so video sits behind the main title text on top */
-    z-index: -1;
-}
-
-/* The text that sits on top of the background video of the landing home page */
-.banner-text {
-    margin: 30px 50px;
-    /* Use flexbox for responsiveness */
-    flex-direction: column;
-}
-
-.banner-text h1 {
-    font-size: 3em;
-    margin: 200px 0 50px 50px;
-    line-height: 1.5em;
-    font-style: italic;
-    text-align: start;
-    color: #fff;
-    /* Use shadow around text as it will be white and this helps 
-  it stand out for reading accessibility against the video background */
-    text-shadow: 0 0 20px #262626;
-}
-
-/* Explore Button on Landing home page styled */
-#explore-link {
-    text-align: end;
-    width: 80%;
-    margin-top: 10px;
-}
-
-#explore-link a {
-    color: #fff;
-    background-color: #424952;
-    border-radius: 10px;
-    padding: 10px;
-    line-height: 2.5em;
-    text-decoration: none;
-}
-
-#explore-link a:hover {
-    letter-spacing: 2px;
-    color: #424952;
-    background-color: #fff;
-}
-
-.content-area {
-    width: 100%;
-    position: relative;
-    top: 1000px;
-    background: #bdd7ee;
-    padding-top: 20px;
-}
-
-/* This is the main content area that will move 
-  over the landing page and behind the header */
-.main-content-container {
-    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 20px 40px 40px 40px;
-    padding: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* This is the containers that hold the text*/
-.container-text {
-    display: flex;
-    flex-direction: column;
-    background-color: #424952;
-    border-radius: 20px;
-    width: 70%;
-    padding: 30px;
-    color: #fff;
-    /* Using high z-index to ensure the text boxes 
-    are in front of the images when overlapped on large screens */
-    z-index: 20;
-}
-
-.container-text h2 {
-    text-shadow: 0 0 4px #262626;
-}
-
-.container-text p {
-    text-align: justify;
-}
-
-/* The empty div that anchors the link when chosen from explore button. */
-.about-anchor {
-    margin-top: -65px;
-    height: 65px;
-}
-
-.about-us-footer a:hover {
-    color: #bdd7ee;
-}
-
-#team-info-details {
-    text-align: center;
-}
-
-#team-info-details p {
-    text-align: center;
-}
-
-#team-info-details a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-}
-
-#team-info-details a:hover {
-    letter-spacing: 2px;
-    color: #bdd7ee;
-}
-
-/*-- Privacy Policy pages  -----------------------------------*/
-#policy-page-container {
-    padding-top: 7rem;
-}
-
-.policy-card {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-.policy-card > * {
-    margin-top: 1rem;
-}
-
-.policy-card ul {
-    margin-left: 25px;
-}
-
-.policy-card a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/*-- Media Queries - Mobile First Design  -----------------------------------*/
-@media (min-width: 594px) {
+@media only screen and (min-width: 594px) {
 
     #or-content h2 {
         font-size: 3rem;
@@ -513,32 +609,33 @@ video {
     }
 
     #rocket-img {
-        transform: rotateZ(75deg) scale(.5);
+        -webkit-transform: rotateZ(75deg) scale(.5);
+            -ms-transform: rotate(75deg) scale(.5);
+                transform: rotateZ(75deg) scale(.5);
     }
 }
 
-@media (min-width: 700px) {
+@media only screen and (min-width: 700px) {
 
     #landing-content h1 {
         font-size: 8rem;
     }
 
-    footer {
-        grid-template-columns: repeat(5, 1fr);
-        height: 60px;
-        font-size: 1vw;
+    #landing-content p {
+        font-size: 1.2rem;
     }
 
-    /* Using flexbox column for responsiveness 
-        and less padding for smaller screens on heading */
     #about-us-header {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         padding: 1rem 2.5rem;
     }
 
     .nav-bar li {
         margin: 0 10px;
-        font-size: 1.5vw;
+        font-size: 1rem;
     }
 
     .banner text {
@@ -552,9 +649,19 @@ video {
     #explore-link a {
         font-size: 1.5em;
     }
+
+    #team-info-details {
+        margin-top: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    #policy-page-container {
+        padding-top: 8rem;
+    }
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
 
     #or-we-could {
         max-height: 85vh;
@@ -579,9 +686,19 @@ video {
         left: 55%;
         top: 30%;
     }
+
+    #team-info-details {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(5, 1fr);
+        height: 60px;
+        font-size: 1rem;
+    }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     #or-content-p {
         font-size: 2rem;
         padding-left: 15rem;
