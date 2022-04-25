@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Hello, World!, about us page">
+    <meta name="description" content="about us page for the Hello, World!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- Link to Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/save-earth-favicon.png">
 
-    <!-- Bootstrap 5-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <!-- Link to Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Hello, World!</title>
+    <title>Hello, World! | About</title>
 </head>
 
-<body>
+<body id="about-us">
     <header id="about-us-header">
         <!-- Logo linked to home page -->
         <div class="logo">
@@ -40,18 +39,18 @@
     </header>
 
     <!-- Landing page with video and text on top -->
-    <div class="banner">
+    <section id="banner">
         <video src="assets/img/earth-view.mp4" muted loop autoplay></video>
         <div class="banner-text">
-            <h1>About Us</h1>
+            <h1>Pale Blue Dots</h1>
             <!-- Explore button on landing page linked to first section -->
             <div id="explore-link">
                 <a href="#team-info" aria-label="Go to the about us section">Meet the Team</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- The main content area that scrolls up over the landing section -->
+    <!-- The rest of the page that scrolls up over the landing section video -->
     <div class="content-area">
         <!-- Team Info Section -->
         <div id="team-info">
@@ -60,33 +59,98 @@
             <div class="about-anchor" id="about-landing"></div>
             <div class="main-content-container">
                 <div class="container-text" id="about-text">
-                    <h2>Team Name</h2><br>
-                    <p>We are a group of 6 Code Institue students, past & present that came together to save earth over the course of 1 Hackathon!</p>
+                    <h2>Pale Blue Dots</h2><br>
+                    <p>We are a group of 6 Code Institue students, past & present that came together to save earth over
+                        the course of 1 Hackathon!</p>
                     <br>
-                    <p>Our Mission: Change behaviours through Terraforming</p><br>
-                    <p>It was tough, fun, mad, a tonne of crazy terraforming facts & hard work...... we hope we succeeded?</p>
+                    <p>Our Mission: Change Behaviours Through Terraforming</p><br>
+                    <p>If we could show how much effort goes into creating an amazing unique planet like earth, maybe,
+                        just maybe, people would be reminded to appreciate the Pale Blue Dot we live on.</p><br>
+                    <p>The idea was bold, the code was a challenge, but we had fun and learnt a tonne of crazy
+                        terraforming facts...... We hope we succeeded?</p>
                     <p>Keep scrolling to learn how to get in touch with us or view our other work.</p>
+
+                    <div id="team-info-details">
+                        <div>
+                            <h2>Alejandro Rebaldería</h2>
+                            <a href="https://www.linkedin.com/in/alejandro-rebalderia/" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://github.com/alerebal" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+    
+                        <div>
+                            <h2>Anthony O'Brien</h2>
+                            <a href="https://www.linkedin.com/in/antobrien/" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href=" https://github.com/auxfuse" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+    
+                        <div>
+                            <h2>Ciara O'Sullivan</h2>
+                            <a href="https://www.linkedin.com/in/ciara-o-sullivan-2834378b" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://www.github.com/ciaraosull" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+    
+                        <div>
+                            <h2>Craig Thomasson</h2>
+                            <a href="https://www.linkedin.com/in/craig-thomasson-webdev/" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://github.com/CraigThomasson" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+    
+                        <div>
+                            <h2>David Watters</h2>
+                            <a href="https://www.linkedin.com/in/davidwattersit/" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://github.com/davewatters" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+    
+                        <div>
+                            <h2>Hashim Aslam</h2>
+                            <a href="https://www.linkedin.com/in/muhammad-hashim-78a42b229" target="_blank"
+                                aria-label="Go to linkedin profile">
+                                <p>LinkedIn</p>
+                            </a>
+                            <a href="https://github.com/hashim222" target="_blank" aria-label="Go to github profile">
+                                <p>GitHub</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- footer -->
-        <footer>
+        <footer class="about-us-footer">
             <!-- Links connects to the different html page sections -->
             <a href="index.html" aria-label="Go to Home Page">Home</a>
             <a href="about-us.html" aria-label="Go to About Us Page">About Us</a>
             <a href="privacy-policy.html" aria-label="Go to Privacy Policy Page">Privacy Policy</a>
             <a href="accessibility-policy.html" aria-label="Go to Privacy Policy Page">Accessibility</a>
-            <p id="copyright">&copy; Team Name 2022</p>
+            <p id="copyright">&copy; Pale Blue Dots 2022</p>
         </footer>
 
-        <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-
-        <!-- Link to Javascript -->
-        <script src="assets/js/script.js"></script>
     </div>
 </body>
 
