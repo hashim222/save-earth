@@ -328,8 +328,13 @@ footer a:hover {
     color: var(--cl-black);
 }
 
-/*-- About Us Page  -----------------------------------*/
+/*-- About Us Page --*/
 /* The main container for the landing about us page under the nav bar */
+
+body#about-us {
+    background: none;
+}
+
 .banner {
     /* fixed to main content moves over as scrolled */
     width: 100%;
