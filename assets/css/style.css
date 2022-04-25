@@ -133,7 +133,7 @@ model-viewer {
 /* Or we could */
 
 #or-we-could {
-    background: var(--vertical-gradient-long);
+    background: var(--vertical-gradient-lon);
     max-height: 50vh;
     width: 100%;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
