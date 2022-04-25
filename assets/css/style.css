@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
-/*-- Global settings */
+/* Global settings */
+
 :root {
     --cl-primary: rgb(218, 92, 8);
     --cl-secondary: rgb(40, 163, 204);
@@ -63,13 +64,81 @@ section {
     min-height: 100vh;
 }
 
-/* Model Viewer Element Styles for 3D models inclusion */
+    /* Model Viewer Element Styles for 3D models inclusion */
 model-viewer {
     background-color: transparent;
 }
 
 model-viewer {
     --poster-color: transparent;
+}
+
+    /* Cards */
+.card {
+    background-color: var(--cl-black);
+    margin: 3rem auto;
+}
+
+.card-header {
+    background-color: var(--cl-primary);
+    color: var(--cl-black);
+}
+
+/* Nav Bar */
+
+    /* Styling for the Whole Header Section */
+#about-us-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #424952;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    flex-direction: column;
+    padding: 1.2rem 0;
+}
+
+.nav-bar > ul {
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    letter-spacing: 2px;
+}
+
+.logo h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-bar {
+    font-size: 10%;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 2vw;
+    margin: 0 5px;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
 }
 
 /* Landing Section */
@@ -134,7 +203,15 @@ model-viewer {
     margin: 3rem auto;
 }
 
-/* Or we could */
+#earth-view {
+    color: var(--cl-secondary);
+}
+
+#earth-view .card-header {
+    background-color: var(--cl-secondary);
+}
+
+/* Or we could section */
 
 #or-we-could {
     background: var(--vertical-gradient-long);
@@ -167,27 +244,8 @@ model-viewer {
     left: 25%;
 }
 
-/*-- Cards  ----------------------------------------*/
-.card {
-    background-color: var(--cl-black);
-    margin: 3rem auto;
-}
+/* Footer */
 
-.card-header {
-    background-color: var(--cl-primary);
-    color: var(--cl-black);
-}
-
-/*-- Earth cards  ----------------------------------------*/
-#earth-view {
-    color: var(--cl-secondary);
-}
-
-#earth-view .card-header {
-    background-color: var(--cl-secondary);
-}
-
-/*-- Footer  -----------------------------------*/
 footer {
     width: 100%;
     background-color: #000;
@@ -216,75 +274,128 @@ footer a:hover {
     color: #da5c08;
 }
 
-/*-- Nav Bar  -----------------------------------*/
+/* About Us Page */
 
-/* Styling for the Whole Header Section */
-#about-us-header {
-    /* Using flexbox for responsive design */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #424952;
+.banner {
     width: 100%;
-    /* Fixed header to always display on top of page*/
+    margin-left: 0%;
+    margin-right: 0%;
     position: fixed;
-    /* Using z-index to ensure header is in front 
-    of the other sections as they scroll passed */
-    z-index: 99;
+    right: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+    /* The background video of the landing home page */
+video {
+    position: fixed;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.banner-text {
+    margin: 30px 50px;
     flex-direction: column;
-    padding: 1.2rem 0;
 }
 
-.nav-bar > ul {
-    margin: 0;
-}
-
-/* The logos link styled */
-.logo a {
-    text-decoration: none;
-    /* Use a transition here for smooth movement on hover */
-    transition: 0.3s;
-}
-
-.logo a:hover {
-    letter-spacing: 2px;
-}
-
-/* The Logo in header styled */
-.logo h2 {
+.banner-text h1 {
+    font-size: 3em;
+    margin: 30px 0 50px 50px;
+    line-height: 1.5em;
+    font-style: italic;
+    text-align: start;
     color: #fff;
-    margin: 0;
+    text-shadow: 0 0 20px #262626;
 }
 
-/* The navigation bar section styled */
-.nav-bar {
-    font-size: 10%;
+#explore-link {
+    text-align: end;
+    width: 80%;
+    margin-top: 10px;
 }
 
-/* The list elements in the navigation bar styled */
-.nav-bar li {
-    display: inline-flex;
-    list-style-type: none;
-    font-size: 2vw;
-    margin: 0 5px;
-}
-
-/* The links for the navigation bar items */
-.nav-bar a {
+#explore-link a {
     color: #fff;
+    background-color: #424952;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2.5em;
     text-decoration: none;
-    letter-spacing: 1px;
-    /* Use a transition here for smooth movement */
-    transition: 0.3s;
 }
 
-.nav-bar a:hover {
+#explore-link a:hover {
     letter-spacing: 2px;
-    border-bottom: 1px solid #fff;
+    color: #424952;
+    background-color: #fff;
 }
 
-/*-- Error pages  -----------------------------------*/
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 1000px;
+    background: #ddd;
+    padding-top: 20px;
+}
+
+/* This is the main content area that will move 
+  over the landing page and behind the header */
+.main-content-container {
+    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 40px 40px 40px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #424952;
+    border-radius: 20px;
+    width: 75%;
+    padding: 20px;
+    color: #fff;
+    z-index: 20;
+    margin-left: 50px;
+}
+
+.container-text h2 {
+    text-shadow: 0 0 4px #262626;
+}
+
+.container-text p {
+    text-align: justify;
+}
+
+    /* The empty div that anchors the link when chosen from explore button. */
+.about-anchor {
+    margin-top: -65px;
+    height: 65px;
+}
+
+/* Privacy Policy pages */
+
+.policy-card > * {
+    margin-top: 1rem;
+}
+
+.policy-card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Error pages */
+
 .error-wrapper {
     display: flex;
     align-items: center;
@@ -332,138 +443,9 @@ footer a:hover {
     color: var(--cl-black);
 }
 
-/*-- About Us Page  -----------------------------------*/
-/* The main container for the landing about us page under the nav bar */
-.banner {
-    /* fixed to main content moves over as scrolled */
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    position: fixed;
-    right: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
+/* Media Queries */
 
-/* The background video of the landing home page */
-video {
-    position: fixed;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    /* Give some opacitiy so not too dominating when text laid on top */
-    opacity: 0.7;
-    /* Use z-index so video sits behind the main title text on top */
-    z-index: -1;
-}
-
-/* The text that sits on top of the background video of the landing home page */
-.banner-text {
-    margin: 30px 50px;
-    /* Use flexbox for responsiveness */
-    flex-direction: column;
-}
-
-.banner-text h1 {
-    font-size: 3em;
-    margin: 30px 0 50px 50px;
-    line-height: 1.5em;
-    font-style: italic;
-    text-align: start;
-    color: #fff;
-    /* Use shadow around text as it will be white and this helps 
-  it stand out for reading accessibility against the video background */
-    text-shadow: 0 0 20px #262626;
-}
-
-/* Explore Button on Landing home page styled */
-#explore-link {
-    text-align: end;
-    width: 80%;
-    margin-top: 10px;
-}
-
-#explore-link a {
-    color: #fff;
-    background-color: #424952;
-    border-radius: 10px;
-    padding: 10px;
-    line-height: 2.5em;
-    text-decoration: none;
-}
-
-#explore-link a:hover {
-    letter-spacing: 2px;
-    color: #424952;
-    background-color: #fff;
-}
-
-.content-area {
-    width: 100%;
-    position: relative;
-    top: 1000px;
-    background: #ddd;
-    padding-top: 20px;
-}
-
-/* This is the main content area that will move 
-  over the landing page and behind the header */
-.main-content-container {
-    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 20px 40px 40px 40px;
-    padding: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* This is the containers that hold the text*/
-.container-text {
-    display: flex;
-    flex-direction: column;
-    background-color: #424952;
-    border-radius: 20px;
-    width: 75%;
-    padding: 20px;
-    color: #fff;
-    /* Using high z-index to ensure the text boxes 
-    are in front of the images when overlapped on large screens */
-    z-index: 20;
-    margin-left: 50px;
-}
-
-.container-text h2 {
-    text-shadow: 0 0 4px #262626;
-}
-
-.container-text p {
-    text-align: justify;
-}
-
-/* The empty div that anchors the link when chosen from explore button. */
-.about-anchor {
-    margin-top: -65px;
-    height: 65px;
-}
-
-/*-- Privacy Policy pages  -----------------------------------*/
-.policy-card > * {
-    margin-top: 1rem;
-}
-
-.policy-card {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/*-- Media Queries - Mobile First Design  -----------------------------------*/
-@media (min-width: 594px) {
+@media only screen and (min-width: 594px) {
     
     #or-content h2 {
         font-size: 3rem;
@@ -480,7 +462,7 @@ video {
     }
 }
 
-@media (min-width: 700px) {
+@media only screen and (min-width: 700px) {
 
     #landing-content h1 {
         font-size: 8rem;
@@ -492,8 +474,6 @@ video {
         font-size: 1vw;
     }
 
-    /* Using flexbox column for responsiveness 
-        and less padding for smaller screens on heading */
     #about-us-header {
         flex-direction: row;
         padding: 1rem 2.5rem;
@@ -517,7 +497,7 @@ video {
     }
 }
 
-@media (min-width: 991px) {
+@media only screen and (min-width: 991px) {
 
     #or-we-could {
         max-height: 85vh;
@@ -544,7 +524,7 @@ video {
     }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     #or-content-p {
         font-size: 2rem;
         padding-left: 15rem;
