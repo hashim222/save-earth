@@ -400,7 +400,7 @@ video {
     width: 100%;
     position: relative;
     top: 1000px;
-    background: #ddd;
+    background: #bdd7ee;
     padding-top: 20px;
 }
 
@@ -425,13 +425,12 @@ video {
     flex-direction: column;
     background-color: #424952;
     border-radius: 20px;
-    width: 75%;
-    padding: 20px;
+    width: 70%;
+    padding: 30px;
     color: #fff;
     /* Using high z-index to ensure the text boxes 
     are in front of the images when overlapped on large screens */
     z-index: 20;
-    margin-left: 50px;
 }
 
 .container-text h2 {
@@ -446,6 +445,10 @@ video {
 .about-anchor {
     margin-top: -65px;
     height: 65px;
+}
+
+.about-us-footer a:hover {
+        color: #bdd7ee;
 }
 
 /*-- Privacy Policy pages  -----------------------------------*/
