@@ -456,6 +456,16 @@ video {
 .policy-card {
     width: 80%;
     margin: 0 auto;
+    padding: 15px;
+}
+
+.policy-card ul {
+    margin-left: 25px;
+}
+
+.policy-card a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
