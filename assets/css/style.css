@@ -2,7 +2,7 @@
 
 /*-- Global settings */
 :root {
-    --cl-primary: #da5c08;
+    --cl-primary: rgb(218, 92, 8);
     --cl-secondary: rgb(40, 163, 204);
     --cl-black: rgb(17, 17, 18);
     --cl-white: rgb(251, 245, 245);
@@ -10,6 +10,30 @@
 
     --ff-roboto: 'Roboto', sans-serif;
     --ff-roboto-slab: 'Roboto Slab', serif;
+
+    --vertical-gradient-short: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75),
+        rgba(37, 37, 37, 0.5),
+        rgba(37, 37, 37, 0.25),
+        rgba(255, 255, 255, 0)
+    );
+
+    --vertical-gradient-long: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(37, 37, 37, 0.25),
+        rgba(37, 37, 37, 0.5),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75),
+        rgba(37, 37, 37, 0.5),
+        rgba(37, 37, 37, 0.25),
+        rgba(255, 255, 255, 0)
+    );
 }
 
 * {
@@ -19,10 +43,10 @@
 }
 
 body {
-    background-color: var(--cl-black);
     color: var(--cl-primary);
     font-family: var(--ff-roboto-slab);
     font-weight: bold;
+    background: url('../img/pexels-lucas-pezeta-milky-way.jpg') center/cover fixed;
 }
 
 h1,
@@ -36,25 +60,114 @@ h6 {
 }
 
 section {
-    /* height: 100vh; */
-    height: auto;
-    background-image: url('../img/pexels-lucas-pezeta-milky-way.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Model Viewer Element Styles for 3D models inclusion */
+model-viewer {
+    background-color: transparent;
+}
+
+/* Landing Section */
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--vertical-gradient-short);
+}
+
+#landing-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+#landing-content h1 {
+    text-align: center;
+}
+
+#landing-content p {
+    font-size: 1.2rem;
+    background: var(--cl-black);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+#landing-alt-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#landing-alt-desc h2 {
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-style: italic;
+    border: 1px solid var(--cl-primary);
+    border-radius: 1rem;
+    background-color: var(--cl-black);
+}
+
+/* Planet sections */
+
+#mars-content, #earth-content {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+#mars-viewer, #earth-viewer {
+    width: 100%;
+    height: 100vh;
+    margin: 3rem auto;
+}
+
+/* Or we could */
+
+#or-we-could {
+    background: var(--vertical-gradient-long);
+    max-height: 50vh;
+    width: 100%;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+}
+
+#or-content {
+    margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#or-content h2 {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+}
+
+#or-content-p {
+    font-size: 1.4rem;
+    padding-left: 2rem;
+}
+
+#rocket-img {
+    position: absolute;
+    transform: rotateZ(75deg) scale(.25);
+    top: -5%;
+    left: 25%;
 }
 
 /*-- Cards  ----------------------------------------*/
 .card {
-    width: 40%;
     background-color: var(--cl-black);
-    margin: 3em;
+    margin: 3rem auto;
 }
-
-/* .card img {
-    width: 250px;
-    align-self: center;
-} */
 
 .card-header {
     background-color: var(--cl-primary);
@@ -72,10 +185,7 @@ section {
 
 /*-- Footer  -----------------------------------*/
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    left: 0;
     background-color: #000;
     color: #fff;
     display: grid;
@@ -83,6 +193,7 @@ footer {
     justify-items: center;
     align-items: center;
     font-size: 2vw;
+    margin-top: 2rem;
 }
 
 #copyright {
@@ -104,9 +215,10 @@ footer a:hover {
 /*-- Nav Bar  -----------------------------------*/
 
 /* Styling for the Whole Header Section */
-header {
+#about-us-header {
     /* Using flexbox for responsive design */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #424952;
@@ -117,7 +229,11 @@ header {
     of the other sections as they scroll passed */
     z-index: 99;
     flex-direction: column;
-    padding: 5px 0 5px;
+    padding: 1.2rem 0;
+}
+
+.nav-bar > ul {
+    margin: 0;
 }
 
 /* The logos link styled */
@@ -134,6 +250,7 @@ header {
 /* The Logo in header styled */
 .logo h2 {
     color: #fff;
+    margin: 0;
 }
 
 /* The navigation bar section styled */
@@ -342,7 +459,29 @@ video {
 }
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
+@media (min-width: 594px) {
+    
+    #or-content h2 {
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+    
+    #or-content-p {
+        font-size: 1.5rem;
+        padding-left: 5.5rem;
+    }
+    
+    #rocket-img {
+        transform: rotateZ(75deg) scale(.5);
+    }
+}
+
 @media (min-width: 700px) {
+
+    #landing-content h1 {
+        font-size: 8rem;
+    }
+
     footer {
         grid-template-columns: repeat(5, 1fr);
         height: 60px;
@@ -351,9 +490,9 @@ video {
 
     /* Using flexbox column for responsiveness 
         and less padding for smaller screens on heading */
-    header {
+    #about-us-header {
         flex-direction: row;
-        padding: 10px 30px;
+        padding: 1rem 2.5rem;
     }
 
     .nav-bar li {
@@ -371,5 +510,39 @@ video {
 
     #explore-link a {
         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 991px) {
+
+    #or-we-could {
+        max-height: 85vh;
+    }
+
+    #or-content {
+        margin-top: 16rem;
+    }
+
+    #or-content h2 {
+        font-size: 5rem;
+        padding-left: 4.5rem;
+    }
+    
+    #or-content-p {
+        font-size: 2rem;
+        padding-left: 8rem;
+        padding-top: 2rem;
+    }
+    
+    #rocket-img {
+        left: 55%;
+        top: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #or-content-p {
+        font-size: 2rem;
+        padding-left: 15rem;
     }
 }
