@@ -246,7 +246,7 @@ model-viewer {
 }
 
 #mars-viewer, #earth-viewer {
-    width: 100%;
+    width: 70%;
     height: 100vh;
     margin: 3rem auto;
 }
