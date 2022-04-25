@@ -30,7 +30,13 @@ With this research in mind, this website aims to establish gratitude within the 
 
 ### Fonts
 
+* We used Roboto fonts for headings and Roboto Slab as a family font for the page.
+
 ### Colour Scheme
+
+* Orange (RGB(218, 92, 8)) is the primary color that we have used as it is relationated with mars. 
+* To the earth we have used the cyan color (rgb(40,163,204)).
+* Black was used for background colors.
 <!-- /design section -->
 
 ## Features
@@ -73,6 +79,40 @@ review and sanity checks by peers in the team, were maintained in good faith by 
 
 Each PR was carefully reviewed in detail, and when necessarym dialog was opened with heavy focus on continuous communication amongst the team
 for Merge Conflicts, adjustments, or confirmations etc.
+
+### HTML Validator
+
+* No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/)
+  
+#### Index
+
+!['Image'](assets/img/testing/validators/index-html-ch.png)
+
+#### About
+
+!['Image'](assets/img/testing/validators/about-html-ch.png)
+
+#### Privacy-pocily
+
+!['Image'](assets/img/testing/validators/policy-html-ch.png)
+
+#### 404
+
+!['Image'](assets/img/testing/validators/404-html-ch.png)
+
+### CSS Validator
+
+* No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator)
+  
+!['Image'](assets/img/testing/validators/css-validator.png)
+
+#### Gave us some warnings about variables
+
+!['Image'](assets/img/testing/validators/css-validator-warnings.png)
+
+#### And several warnings about Bootstrap cdn
+
+!['Image'](assets/img/testing/validators/css-validator-bootstrap-warnings.png)
 
 ### Interesting Issues & Bugs Found
 
@@ -147,6 +187,12 @@ To clone this repository from [GitHub](www.github.com) to a local computer to ma
 
 *   Interesting Engineering - [Making Mars Habitable: Researchers Propose a Localized Alternative to Terraforming](https://interestingengineering.com/making-mars-habitable-researchers-propose-a-localized-alternative-to-terraforming)
 
+**Mars Images**
+
+* Mars images was taken from Pixabay, and they are work of the authors:
+  - WikiImages
+  - Alex Antropov
+
 **Earth**
 
 *   National Geographic - [Planet Earth, Explained](https://www.nationalgeographic.com/science/article/earth)
@@ -158,6 +204,15 @@ To clone this repository from [GitHub](www.github.com) to a local computer to ma
 *   National Geographic - [The Sun](https://www.nationalgeographic.org/encyclopedia/sun/)
 
 *   NBC - [What Makes Earth so Special](https://www.nbcnews.com/id/wbna25587911)
+
+**Earth Images**
+* Earth images was taken from Pexels, and they are work of the authors:
+  - Irina Iriser
+  - Stain Egil
+  - Joetography
+  - Quang
+  - Lucas Pezeta
+  
 
 ### Media
    * The favicon Image for this website was taken from [PngWing Website](https://www.pngwing.com/)
