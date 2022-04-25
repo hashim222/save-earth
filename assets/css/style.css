@@ -451,6 +451,25 @@ video {
         color: #bdd7ee;
 }
 
+#team-info-details {
+    text-align: center;
+}
+
+#team-info-details p {
+    text-align: center;
+}
+
+#team-info-details a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+#team-info-details a:hover {
+    letter-spacing: 2px;
+    color: #bdd7ee;
+}
+
 /*-- Privacy Policy pages  -----------------------------------*/
 .policy-card > * {
     margin-top: 1rem;
