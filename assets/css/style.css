@@ -11,29 +11,25 @@
     --ff-roboto: 'Roboto', sans-serif;
     --ff-roboto-slab: 'Roboto Slab', serif;
 
-    --vertical-gradient-short: linear-gradient(
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.75),
-        rgba(37, 37, 37, 0.5),
-        rgba(37, 37, 37, 0.25),
-        rgba(255, 255, 255, 0)
-    );
+    --vertical-gradient-short: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.75),
+            rgba(37, 37, 37, 0.5),
+            rgba(37, 37, 37, 0.25),
+            rgba(255, 255, 255, 0));
 
-    --vertical-gradient-long: linear-gradient(
-        rgba(255, 255, 255, 0),
-        rgba(37, 37, 37, 0.25),
-        rgba(37, 37, 37, 0.5),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.75),
-        rgba(37, 37, 37, 0.5),
-        rgba(37, 37, 37, 0.25),
-        rgba(255, 255, 255, 0)
-    );
+    --vertical-gradient-long: linear-gradient(rgba(255, 255, 255, 0),
+            rgba(37, 37, 37, 0.25),
+            rgba(37, 37, 37, 0.5),
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.75),
+            rgba(37, 37, 37, 0.5),
+            rgba(37, 37, 37, 0.25),
+            rgba(255, 255, 255, 0));
 }
 
 * {
@@ -119,12 +115,14 @@ model-viewer {
 
 /* Planet sections */
 
-#mars-content, #earth-content {
+#mars-content,
+#earth-content {
     max-height: 100vh;
     overflow-y: scroll;
 }
 
-#mars-viewer, #earth-viewer {
+#mars-viewer,
+#earth-viewer {
     width: 100%;
     height: 100vh;
     margin: 3rem auto;
@@ -232,7 +230,7 @@ footer a:hover {
     padding: 1.2rem 0;
 }
 
-.nav-bar > ul {
+.nav-bar>ul {
     margin: 0;
 }
 
@@ -333,6 +331,8 @@ footer a:hover {
 
 body#about-us {
     background: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner {
@@ -369,7 +369,7 @@ video {
 
 .banner-text h1 {
     font-size: 3em;
-    margin: 30px 0 50px 50px;
+    margin: 200px 0 50px 50px;
     line-height: 1.5em;
     font-style: italic;
     text-align: start;
@@ -453,7 +453,7 @@ video {
 }
 
 .about-us-footer a:hover {
-        color: #bdd7ee;
+    color: #bdd7ee;
 }
 
 #team-info-details {
@@ -476,7 +476,7 @@ video {
 }
 
 /*-- Privacy Policy pages  -----------------------------------*/
-.policy-card > * {
+.policy-card>* {
     margin-top: 1rem;
 }
 
@@ -487,17 +487,17 @@ video {
 
 /*-- Media Queries - Mobile First Design  -----------------------------------*/
 @media (min-width: 594px) {
-    
+
     #or-content h2 {
         font-size: 3rem;
         padding-left: 2rem;
     }
-    
+
     #or-content-p {
         font-size: 1.5rem;
         padding-left: 5.5rem;
     }
-    
+
     #rocket-img {
         transform: rotateZ(75deg) scale(.5);
     }
@@ -554,13 +554,13 @@ video {
         font-size: 5rem;
         padding-left: 4.5rem;
     }
-    
+
     #or-content-p {
         font-size: 2rem;
         padding-left: 8rem;
         padding-top: 2rem;
     }
-    
+
     #rocket-img {
         left: 55%;
         top: 30%;
