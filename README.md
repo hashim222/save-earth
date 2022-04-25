@@ -5,7 +5,7 @@ View the live project [HERE](https://hashim222.github.io/save-earth)
 ## Overview
 Hello, World! is a website for the Code Institute Hackathon to celebrate Earth Day 2022.
 
-The aim of this website Hello, World! is to create awareness of the value of planet Earth and to help bring awareness appreciation in the hope of changing attitudes and behaviours towards our planet.  To allow the user to rethink how we treat and interact and respect our planet. 
+The aim of this website Hello, World! is to create awareness of the value of planet Earth and to help bring awareness and appreciation in the hope of changing attitudes and behaviours towards our planet.  To allow the user to rethink how we treat and interact and respect our planet. 
 
 To do the above this website presents the user with the idea of terraforming Mars.  This should grab the user’s attention as it should be unexpected for a website with the theme of Earth Day.  The user is given a 3D globe of Mars to interact with.  As the user clicks, they start to learn how inhospitable a planet like Mars is and the almost impossible effort that goes into trying to terraform and create a planet like Earth.
 
@@ -20,7 +20,13 @@ With this research in mind, this website aims to establish gratitude within the 
 ## User Experience (UX)
 
 ### User Stories
-<!-- /ux -->
+As a User I would like to:
+* Grab and spin the sphere to locate other points in the location.
+* See when I hover over each small dot on the sphere, the text is clearly visible.
+* Find out more information on the Team that developed the site and how to contact them
+* Read the site’s privacy policy
+* Know accessibility information relating to the page
+
 
 ## Design
 
