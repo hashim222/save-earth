@@ -226,7 +226,7 @@ footer a:hover {
     /* Fixed header to always display on top of page*/
     position: fixed;
     /* Using z-index to ensure header is in front 
-    of the other sections as they scroll passed */
+    of the other sections as they scroll past */
     z-index: 99;
     flex-direction: column;
     padding: 1.2rem 0;
