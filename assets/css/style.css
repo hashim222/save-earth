@@ -68,6 +68,10 @@ model-viewer {
     background-color: transparent;
 }
 
+model-viewer {
+    --poster-color: transparent;
+}
+
 /* Landing Section */
 
 #landing {
