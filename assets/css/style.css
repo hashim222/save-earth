@@ -476,14 +476,18 @@ video {
 }
 
 /*-- Privacy Policy pages  -----------------------------------*/
-.policy-card>* {
-    margin-top: 1rem;
+#policy-page-container {
+    padding-top: 7rem;
 }
 
 .policy-card {
     width: 80%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 1rem;
+}
+
+.policy-card > * {
+    margin-top: 1rem;
 }
 
 .policy-card ul {
