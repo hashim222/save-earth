@@ -655,6 +655,10 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
     }
+
+    #policy-page-container {
+        padding-top: 8rem;
+    }
 }
 
 @media only screen and (min-width: 991px) {
