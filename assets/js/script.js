@@ -1,5 +1,5 @@
 /***
- * Model Viewer integration for Annotations
+ * Model Viewer integration
  */
 const landing = document.getElementById("landing");
 const landingViewer = document.getElementById("landing-viewer");
