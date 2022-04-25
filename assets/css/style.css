@@ -138,12 +138,16 @@ model-viewer {
     font-size: 10%;
 }
 
+.nav-bar ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-bar li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
     list-style-type: none;
-    font-size: 2vw;
+    font-size: 1rem;
     margin: 0 5px;
 }
 
@@ -494,7 +498,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 2vw;
+    font-size: 1rem;
     margin-top: 2rem;
 }
 
@@ -581,6 +585,12 @@ footer a:hover {
 
 /* Media Queries */
 
+@media only screen and (min-width: 420px) {
+    .nav-bar ul {
+        flex-direction: row;
+    }
+}
+
 @media only screen and (min-width: 594px) {
 
     #or-content h2 {
@@ -610,12 +620,6 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
-    footer {
-        grid-template-columns: repeat(5, 1fr);
-        height: 60px;
-        font-size: 1vw;
-    }
-
     #about-us-header {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -626,7 +630,7 @@ footer a:hover {
 
     .nav-bar li {
         margin: 0 10px;
-        font-size: 1.5vw;
+        font-size: 1rem;
     }
 
     .banner text {
@@ -676,6 +680,12 @@ footer a:hover {
 
     #team-info-details {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(5, 1fr);
+        height: 60px;
+        font-size: 1rem;
     }
 }
 
