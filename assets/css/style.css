@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 versions
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 /* Global settings */
@@ -38,7 +45,8 @@
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -88,15 +96,25 @@ model-viewer {
 
     /* Styling for the Whole Header Section */
 #about-us-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #424952;
     width: 100%;
     position: fixed;
     z-index: 99;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     padding: 1.2rem 0;
 }
 
@@ -106,6 +124,8 @@ model-viewer {
 
 .logo a {
     text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -123,6 +143,8 @@ model-viewer {
 }
 
 .nav-bar li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     list-style-type: none;
     font-size: 2vw;
@@ -133,6 +155,8 @@ model-viewer {
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -146,18 +170,36 @@ model-viewer {
 #landing {
     height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: var(--vertical-gradient-short);
 }
 
 #landing-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 5rem;
     width: 100%;
 }
@@ -174,9 +216,15 @@ model-viewer {
 }
 
 #landing-alt-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -217,14 +265,20 @@ model-viewer {
     background: var(--vertical-gradient-long);
     max-height: 50vh;
     width: 100%;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     position: relative;
 }
 
 #or-content {
     margin-top: 14rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #or-content h2 {
@@ -239,7 +293,9 @@ model-viewer {
 
 #rocket-img {
     position: absolute;
-    transform: rotateZ(75deg) scale(.25);
+    -webkit-transform: rotateZ(75deg) scale(.25);
+        -ms-transform: rotate(75deg) scale(.25);
+            transform: rotateZ(75deg) scale(.25);
     top: -5%;
     left: 25%;
 }
@@ -250,10 +306,13 @@ footer {
     width: 100%;
     background-color: #000;
     color: #fff;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 2vw;
     margin-top: 2rem;
 }
@@ -283,8 +342,12 @@ footer a:hover {
     position: fixed;
     right: 0;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
     /* The background video of the landing home page */
@@ -293,14 +356,18 @@ video {
     margin-top: 50px;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     opacity: 0.7;
     z-index: -1;
 }
 
 .banner-text {
     margin: 30px 50px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .banner-text h1 {
@@ -352,14 +419,25 @@ video {
     margin: 20px 40px 40px 40px;
     padding: 40px;
     border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .container-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #424952;
     border-radius: 20px;
     width: 75%;
@@ -397,19 +475,35 @@ video {
 /* Error pages */
 
 .error-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
 }
 
 .error-content {
     border: 1px solid;
     background-color: var(--cl-error-bg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .error-content>p {
@@ -458,7 +552,9 @@ video {
     }
     
     #rocket-img {
-        transform: rotateZ(75deg) scale(.5);
+        -webkit-transform: rotateZ(75deg) scale(.5);
+            -ms-transform: rotate(75deg) scale(.5);
+                transform: rotateZ(75deg) scale(.5);
     }
 }
 
@@ -475,7 +571,10 @@ video {
     }
 
     #about-us-header {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         padding: 1rem 2.5rem;
     }
 
