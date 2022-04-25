@@ -3,9 +3,6 @@
 /*-- Global settings */
 :root {
     --cl-primary: rgb(218, 92, 8);
-    --cl-secondary: rgb(40,163,204);
-
-    --cl-primary: #da5c08;
     --cl-secondary: rgb(40, 163, 204);
     --cl-black: rgb(17, 17, 18);
     --cl-white: rgb(251, 245, 245);
@@ -13,6 +10,30 @@
 
     --ff-roboto: 'Roboto', sans-serif;
     --ff-roboto-slab: 'Roboto Slab', serif;
+
+    --vertical-gradient-short: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75),
+        rgba(37, 37, 37, 0.5),
+        rgba(37, 37, 37, 0.25),
+        rgba(255, 255, 255, 0)
+    );
+
+    --vertical-gradient-long: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(37, 37, 37, 0.25),
+        rgba(37, 37, 37, 0.5),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.75),
+        rgba(37, 37, 37, 0.5),
+        rgba(37, 37, 37, 0.25),
+        rgba(255, 255, 255, 0)
+    );
 }
 
 * {
@@ -56,14 +77,7 @@ model-viewer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.75),
-        rgba(37, 37, 37, 0.5),
-        rgba(37, 37, 37, 0.25),
-        rgba(255, 255, 255, 0)
-    );
+    background: var(--vertical-gradient-short);
 }
 
 #landing-content {
@@ -76,8 +90,14 @@ model-viewer {
 }
 
 #landing-content h1 {
-    /* font-size: 8rem; */
     text-align: center;
+}
+
+#landing-content p {
+    font-size: 1.2rem;
+    background: var(--cl-black);
+    padding: 1rem;
+    border-radius: 0.75rem;
 }
 
 #landing-alt-desc {
@@ -92,7 +112,7 @@ model-viewer {
     padding: 1rem;
     font-size: 2.5rem;
     font-style: italic;
-    border: 1px solid red;
+    border: 1px solid var(--cl-primary);
     border-radius: 1rem;
     background-color: var(--cl-black);
 }
@@ -113,20 +133,7 @@ model-viewer {
 /* Or we could */
 
 #or-we-could {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0),
-        rgba(37, 37, 37, 0.25),
-        rgba(37, 37, 37, 0.5),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.75),
-        rgba(37, 37, 37, 0.5),
-        rgba(37, 37, 37, 0.25),
-        rgba(255, 255, 255, 0)
-    );
+    background: var(--vertical-gradient-long);
     max-height: 50vh;
     width: 100%;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
